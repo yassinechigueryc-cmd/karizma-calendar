@@ -23,59 +23,55 @@ const TYPE_CONFIG = {
 
 const PHASE_CONFIG = {
   pre:  { label: 'Pré-événement',  color: '#0A7BC4' },
-  site: { label: 'Sur site GITEX', color: '#E85D04' },
+  site: { label: 'Sur site GITEX', color: '#fbc600' },
   post: { label: 'Post-événement', color: '#1A9E6E' },
 }
 
 const BLOCKS = [
   {
-    key: 'mars-pre', phase: 'pre', label: 'Pré-événement — Mars 2026', dates: '11 – 31 Mars',
+    key: 'mars', phase: 'pre', label: 'Pré-événement — Mars 2026', dates: '9 – 31 Mars',
     cells: [
-      { day: null, label: '9'  }, { day: '11 Mars' }, { day: null, label: '12' }, { day: '13 Mars' }, { day: null, label: '14' }, { day: '15 Mars' }, { day: null, label: '16' },
-      { day: null, label: '17' }, { day: '18 Mars' }, { day: '19 Mars' }, { day: null, label: '20' }, { day: '21 Mars' }, { day: null, label: '22' }, { day: null, label: '23' },
-      { day: null, label: '24' }, { day: '25 Mars' }, { day: '26 Mars' }, { day: null, label: '27' }, { day: '28 Mars' }, { day: null, label: '29' }, { day: '30 Mars' },
-      { day: '31 Mars' }, { day: null }, { day: null }, { day: null }, { day: null }, { day: null }, { day: null },
+      { day: '9 Mars',  label: 'Lun 9'  }, { day: '10 Mars', label: 'Mar 10' }, { day: '11 Mars', label: 'Mer 11' }, { day: '12 Mars', label: 'Jeu 12' }, { day: '13 Mars', label: 'Ven 13' }, { day: '14 Mars', label: 'Sam 14' }, { day: '15 Mars', label: 'Dim 15' },
+      { day: '16 Mars', label: 'Lun 16' }, { day: '17 Mars', label: 'Mar 17' }, { day: '18 Mars', label: 'Mer 18' }, { day: '19 Mars', label: 'Jeu 19' }, { day: '20 Mars', label: 'Ven 20' }, { day: '21 Mars', label: 'Sam 21' }, { day: '22 Mars', label: 'Dim 22' },
+      { day: '23 Mars', label: 'Lun 23' }, { day: '24 Mars', label: 'Mar 24' }, { day: '25 Mars', label: 'Mer 25' }, { day: '26 Mars', label: 'Jeu 26' }, { day: '27 Mars', label: 'Ven 27' }, { day: '28 Mars', label: 'Sam 28' }, { day: '29 Mars', label: 'Dim 29' },
+      { day: '30 Mars', label: 'Lun 30' }, { day: '31 Mars', label: 'Mar 31' }, { day: '1 Avr',  label: 'Mer 1'  }, { day: '2 Avr',  label: 'Jeu 2'  }, { day: '3 Avr',  label: 'Ven 3'  }, { day: '4 Avr',  label: 'Sam 4'  }, { day: '5 Avr',  label: 'Dim 5'  },
     ],
   },
   {
-    key: 'avr-pre', phase: 'pre', label: 'Pré-événement — Avril 2026', dates: '1 – 6 Avril',
+    key: 'avr-pre', phase: 'pre', label: 'Pré-événement — Avril 2026', dates: '6 Avril',
     cells: [
-      { day: null, label: '—' }, { day: '1 Avr' }, { day: null, label: '2' }, { day: '3 Avr' }, { day: null, label: '4' }, { day: null, label: '5' }, { day: '6 Avr' },
+      { day: '6 Avr', label: 'Lun 6' }, { day: null, label: '' }, { day: null, label: '' }, { day: null, label: '' }, { day: null, label: '' }, { day: null, label: '' }, { day: null, label: '' },
     ],
   },
   {
     key: 'site', phase: 'site', label: 'Sur site — GITEX Africa 2026 · Marrakech', dates: '7 – 9 Avril',
     cells: [
-      { day: null }, { day: '7 Avr', gitex: 'J1' }, { day: '8 Avr', gitex: 'J2' }, { day: '9 Avr', gitex: 'J3' },
-      { day: null }, { day: null }, { day: null },
+      { day: '7 Avr', label: 'Mar 7', gitex: 'J1' }, { day: '8 Avr', label: 'Mer 8', gitex: 'J2' }, { day: '9 Avr', label: 'Jeu 9', gitex: 'J3' },
+      { day: null, label: '' }, { day: null, label: '' }, { day: null, label: '' }, { day: null, label: '' },
     ],
   },
   {
     key: 'post', phase: 'post', label: 'Post-événement — Avril 2026', dates: '10 – 30 Avril',
     cells: [
-      { day: null, label: '13' }, { day: null, label: '14' }, { day: null, label: '15' }, { day: null, label: '16' },
-      { day: '10 Avr' }, { day: null, label: '11' }, { day: '12 Avr' },
-      { day: '14 Avr' }, { day: null, label: '15' }, { day: null, label: '16' },
-      { day: '17 Avr' }, { day: null, label: '18' }, { day: null, label: '19' }, { day: null, label: '20' },
-      { day: '21 Avr' }, { day: null, label: '22' }, { day: '23 Avr' },
-      { day: '25 Avr' }, { day: null, label: '26' }, { day: null, label: '27' },
-      { day: '28 Avr' }, { day: null, label: '29' }, { day: null, label: '30' }, { day: null },
+      { day: '10 Avr', label: 'Ven 10' }, { day: '11 Avr', label: 'Sam 11' }, { day: '12 Avr', label: 'Dim 12' }, { day: '13 Avr', label: 'Lun 13' }, { day: '14 Avr', label: 'Mar 14' }, { day: '15 Avr', label: 'Mer 15' }, { day: '16 Avr', label: 'Jeu 16' },
+      { day: '17 Avr', label: 'Ven 17' }, { day: '18 Avr', label: 'Sam 18' }, { day: '19 Avr', label: 'Dim 19' }, { day: '20 Avr', label: 'Lun 20' }, { day: '21 Avr', label: 'Mar 21' }, { day: '22 Avr', label: 'Mer 22' }, { day: '23 Avr', label: 'Jeu 23' },
+      { day: '24 Avr', label: 'Ven 24' }, { day: '25 Avr', label: 'Sam 25' }, { day: '26 Avr', label: 'Dim 26' }, { day: '27 Avr', label: 'Lun 27' }, { day: '28 Avr', label: 'Mar 28' }, { day: '29 Avr', label: 'Mer 29' }, { day: '30 Avr', label: 'Jeu 30' },
     ],
   },
 ]
 
 const INITIAL_PILLS = [
-  { id: 'p1',  block_key: 'mars-pre', cell_day: '11 Mars', type: 'texte',     platform: 'li',   time: '8h30',   title: 'Annonce officielle GITEX',    description: 'Annonce officielle participation GITEX Africa 2026 — stand [N°], Marrakech' },
-  { id: 'p2',  block_key: 'mars-pre', cell_day: '13 Mars', type: 'texte',     platform: 'li',   time: '12h00',  title: '3 questions transfo digitale', description: '3 questions qu\'on nous pose tout le temps sur la transformation digitale au Maroc' },
-  { id: 'p3',  block_key: 'mars-pre', cell_day: '15 Mars', type: 'carrousel', platform: 'li',   time: '8h30',   title: '5 signes SI freine croissance', description: '5 signes que votre SI freine votre croissance' },
-  { id: 'p4',  block_key: 'mars-pre', cell_day: '18 Mars', type: 'video',     platform: 'li',   time: '8h30',   title: 'Teaser GITEX',                 description: 'Teaser GITEX filmé au bureau Karizma — équipe, ambiance, annonce' },
-  { id: 'p5',  block_key: 'mars-pre', cell_day: '19 Mars', type: 'texte',     platform: 'li',   time: '12h00',  title: 'Transfo digitale Afrique 2026', description: 'Pourquoi la transformation digitale africaine ne peut plus attendre en 2026' },
-  { id: 'p6',  block_key: 'mars-pre', cell_day: '21 Mars', type: 'carrousel', platform: 'li',   time: '8h30',   title: 'ERP vs dev sur mesure',        description: 'ERP vs développement sur mesure : comment choisir pour votre PME ?' },
-  { id: 'p7',  block_key: 'mars-pre', cell_day: '25 Mars', type: 'video',     platform: 'yt',   time: '8h30',   title: 'Interview CEO Vision IT',      description: 'Vision IT Afrique 2026 — ce qui change pour les entreprises' },
-  { id: 'p8',  block_key: 'mars-pre', cell_day: '26 Mars', type: 'texte',     platform: 'meta', time: '12h00',  title: 'Retour client ERP ↑60%',       description: 'Retour client chiffré : délais de reporting réduits de 60% après intégration ERP' },
-  { id: 'p9',  block_key: 'mars-pre', cell_day: '28 Mars', type: 'carrousel', platform: 'li',   time: '8h30',   title: 'Cloud en Afrique 2026',        description: 'Pourquoi les entreprises africaines basculent vers le cloud en 2026' },
-  { id: 'p10', block_key: 'mars-pre', cell_day: '30 Mars', type: 'texte',     platform: 'x',    time: '8h30',   title: 'J-7 : Réserver un RDV',        description: 'J-7 : réservez votre créneau avec l\'équipe Karizma à Marrakech + QR code' },
-  { id: 'p11', block_key: 'mars-pre', cell_day: '31 Mars', type: 'texte',     platform: 'li',   time: '12h00',  title: 'Agenda stand GITEX',           description: 'Agenda stand : démos disponibles, horaires, numéro stand GITEX Africa' },
+  { id: 'p1',  block_key: 'mars', cell_day: '11 Mars', type: 'texte',     platform: 'li',   time: '8h30',   title: 'Annonce officielle GITEX',    description: 'Annonce officielle participation GITEX Africa 2026 — stand [N°], Marrakech' },
+  { id: 'p2',  block_key: 'mars', cell_day: '13 Mars', type: 'texte',     platform: 'li',   time: '12h00',  title: '3 questions transfo digitale', description: '3 questions qu\'on nous pose tout le temps sur la transformation digitale au Maroc' },
+  { id: 'p3',  block_key: 'mars', cell_day: '15 Mars', type: 'carrousel', platform: 'li',   time: '8h30',   title: '5 signes SI freine croissance', description: '5 signes que votre SI freine votre croissance' },
+  { id: 'p4',  block_key: 'mars', cell_day: '18 Mars', type: 'video',     platform: 'li',   time: '8h30',   title: 'Teaser GITEX',                 description: 'Teaser GITEX filmé au bureau Karizma — équipe, ambiance, annonce' },
+  { id: 'p5',  block_key: 'mars', cell_day: '19 Mars', type: 'texte',     platform: 'li',   time: '12h00',  title: 'Transfo digitale Afrique 2026', description: 'Pourquoi la transformation digitale africaine ne peut plus attendre en 2026' },
+  { id: 'p6',  block_key: 'mars', cell_day: '21 Mars', type: 'carrousel', platform: 'li',   time: '8h30',   title: 'ERP vs dev sur mesure',        description: 'ERP vs développement sur mesure : comment choisir pour votre PME ?' },
+  { id: 'p7',  block_key: 'mars', cell_day: '25 Mars', type: 'video',     platform: 'yt',   time: '8h30',   title: 'Interview CEO Vision IT',      description: 'Vision IT Afrique 2026 — ce qui change pour les entreprises' },
+  { id: 'p8',  block_key: 'mars', cell_day: '26 Mars', type: 'texte',     platform: 'meta', time: '12h00',  title: 'Retour client ERP ↑60%',       description: 'Retour client chiffré : délais de reporting réduits de 60% après intégration ERP' },
+  { id: 'p9',  block_key: 'mars', cell_day: '28 Mars', type: 'carrousel', platform: 'li',   time: '8h30',   title: 'Cloud en Afrique 2026',        description: 'Pourquoi les entreprises africaines basculent vers le cloud en 2026' },
+  { id: 'p10', block_key: 'mars', cell_day: '30 Mars', type: 'texte',     platform: 'x',    time: '8h30',   title: 'J-7 : Réserver un RDV',        description: 'J-7 : réservez votre créneau avec l\'équipe Karizma à Marrakech + QR code' },
+  { id: 'p11', block_key: 'mars', cell_day: '31 Mars', type: 'texte',     platform: 'li',   time: '12h00',  title: 'Agenda stand GITEX',           description: 'Agenda stand : démos disponibles, horaires, numéro stand GITEX Africa' },
   { id: 'p12', block_key: 'avr-pre',  cell_day: '1 Avr',   type: 'texte',     platform: 'li',   time: '12h00',  title: 'Agenda stand Karizma',         description: 'Agenda stand détaillé : démos disponibles, horaires, numéro stand' },
   { id: 'p13', block_key: 'avr-pre',  cell_day: '3 Avr',   type: 'texte',     platform: 'meta', time: '8h30',   title: 'J-3 : 3 défis IT à GITEX',    description: 'J-3 : les 3 défis IT dont on veut parler à GITEX Africa 2026' },
   { id: 'p14', block_key: 'avr-pre',  cell_day: '6 Avr',   type: 'texte',     platform: 'li',   time: '20h00',  title: 'J-1 : On arrive à Marrakech',  description: 'J-1 : Demain on est à Marrakech — retrouvez-nous stand [N°]' },
@@ -149,46 +145,24 @@ export default function App() {
     loadPills()
   }, [])
 
-  // ── Real-time subscription ──
+  // ── Auto-refresh every 5 seconds (polling) ──
   useEffect(() => {
-    const channel = supabase
-      .channel('pills-realtime')
-      .on('postgres_changes', { event: 'INSERT', schema: 'public', table: 'pills' }, (payload) => {
-        const newPill = payload.new
-        if (skipNextRef.current.has(newPill.id)) { skipNextRef.current.delete(newPill.id); return }
+    setSyncStatus('connected')
+    const interval = setInterval(async () => {
+      const { data, error } = await supabase
+        .from('pills')
+        .select('*')
+        .order('created_at', { ascending: true })
+      if (!error && data) {
         setPills(prev => {
-          if (prev.find(p => p.id === newPill.id)) return prev
-          return [...prev, newPill]
+          const prevIds = prev.map(p => p.id).join(',')
+          const newIds = data.map(p => p.id).join(',')
+          if (prevIds === newIds && JSON.stringify(prev) === JSON.stringify(data)) return prev
+          return data
         })
-        showToast('✚ Nouveau post ajouté par quelqu\'un', '#0A7BC4')
-      })
-      .on('postgres_changes', { event: 'UPDATE', schema: 'public', table: 'pills' }, (payload) => {
-        const updated = payload.new
-        if (skipNextRef.current.has(updated.id)) { skipNextRef.current.delete(updated.id); return }
-        setPills(prev => prev.map(p => p.id === updated.id ? updated : p))
-        showToast('✎ Post modifié par quelqu\'un', '#0A7BC4')
-      })
-      .on('postgres_changes', { event: 'DELETE', schema: 'public', table: 'pills' }, (payload) => {
-        const deletedId = payload.old.id
-        if (skipNextRef.current.has(deletedId)) { skipNextRef.current.delete(deletedId); return }
-        setPills(prev => prev.filter(p => p.id !== deletedId))
-        showToast('✕ Post supprimé par quelqu\'un', '#484F58')
-      })
-      // Track presence (online users count)
-      .on('presence', { event: 'sync' }, () => {
-        const state = channel.presenceState()
-        setOnlineUsers(Object.keys(state).length)
-      })
-      .subscribe(async (status) => {
-        if (status === 'SUBSCRIBED') {
-          await channel.track({ online_at: new Date().toISOString() })
-          setSyncStatus('connected')
-        } else if (status === 'CLOSED' || status === 'CHANNEL_ERROR') {
-          setSyncStatus('error')
-        }
-      })
-
-    return () => { supabase.removeChannel(channel) }
+      }
+    }, 5000)
+    return () => clearInterval(interval)
   }, [])
 
   function showToast(msg, color = '#1A9E6E') {
@@ -257,7 +231,7 @@ export default function App() {
     e.dataTransfer.effectAllowed = 'move'
     const ghost = document.createElement('div')
     ghost.textContent = pill.title
-    ghost.style.cssText = 'position:fixed;top:-100px;left:-100px;background:#E85D04;color:#fff;padding:4px 10px;border-radius:6px;font-size:12px;font-weight:600;white-space:nowrap;pointer-events:none;font-family:DM Sans,sans-serif'
+    ghost.style.cssText = 'position:fixed;top:-100px;left:-100px;background:#fbc600;color:#fff;padding:4px 10px;border-radius:6px;font-size:12px;font-weight:600;white-space:nowrap;pointer-events:none;font-family:DM Sans,sans-serif'
     document.body.appendChild(ghost)
     e.dataTransfer.setDragImage(ghost, 0, 0)
     setTimeout(() => document.body.removeChild(ghost), 0)
@@ -283,8 +257,8 @@ export default function App() {
     return pills.filter(p => keys.includes(p.block_key)).length
   }
 
-  const syncDot = syncStatus === 'syncing' ? '#E85D04' : syncStatus === 'error' ? '#FF8080' : '#1A9E6E'
-  const syncLabel = syncStatus === 'syncing' ? 'Sync...' : syncStatus === 'error' ? '⚠ Hors ligne' : '● Live'
+  const syncDot = syncStatus === 'syncing' ? '#fbc600' : syncStatus === 'error' ? '#FF8080' : '#1A9E6E'
+  const syncLabel = syncStatus === 'syncing' ? 'Sync...' : syncStatus === 'error' ? '⚠ Hors ligne' : '✓ Connecté'
 
   // ─────────────────────────────────────────────
   // RENDER
@@ -295,7 +269,7 @@ export default function App() {
       <div style={{ background: '#0D1117', minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'DM Sans, sans-serif', color: '#E6EDF3' }}>
         <div style={{ textAlign: 'center' }}>
           <div style={{ fontFamily: 'Poppins, sans-serif', fontSize: '1.5rem', fontWeight: 800, color: '#fff', marginBottom: 8 }}>
-            Karizma <span style={{ color: '#E85D04' }}>×</span> GITEX
+            Karizma <span style={{ color: '#fbc600' }}>×</span> GITEX
           </div>
           <div style={{ fontSize: '0.8rem', color: '#484F58', animation: 'pulse 1.2s infinite' }}>Chargement du calendrier partagé...</div>
           <style>{`@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=DM+Sans:wght@400&display=swap')`}</style>
@@ -316,12 +290,12 @@ export default function App() {
         .pill-wrap{animation:fadeUp .18s ease;position:relative}
         .pill-wrap:hover .pill-actions{opacity:1!important}
         .pill-wrap:hover .pill-inner{opacity:.85}
-        .tab-item{transition:all .18s}.tab-item:hover{border-color:#E85D04!important;color:#E85D04!important}
+        .tab-item{transition:all .18s}.tab-item:hover{border-color:#fbc600!important;color:#fbc600!important}
         .leg-row{transition:all .12s;cursor:pointer;border-radius:7px;user-select:none}.leg-row:hover{background:#21262D}
-        input:focus,textarea:focus{border-color:#E85D04!important;outline:none}
+        input:focus,textarea:focus{border-color:#fbc600!important;outline:none}
         .modal-wrap{animation:popIn .2s ease}
         .save-btn:hover{background:#ff6a0d!important}
-        .cancel-btn:hover{border-color:#E85D04!important;color:#E85D04!important}
+        .cancel-btn:hover{border-color:#fbc600!important;color:#fbc600!important}
         .cell-zone{transition:background .1s}
       `}</style>
 
@@ -349,7 +323,7 @@ export default function App() {
       {/* TOP BAR */}
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 14, flexWrap: 'wrap', gap: 10 }}>
         <div style={{ fontFamily: "'Poppins', sans-serif", fontSize: '1.05rem', fontWeight: 800, color: '#fff' }}>
-          Calendrier · <span style={{ color: '#E85D04' }}>Karizma × GITEX Africa 2026</span>
+          Calendrier · <span style={{ color: '#fbc600' }}>Karizma × GITEX Africa 2026</span>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
           {/* Online users */}
@@ -380,7 +354,7 @@ export default function App() {
       <div style={{ display: 'flex', gap: 7, marginBottom: 14, flexWrap: 'wrap' }}>
         {[['all', 'Toutes les phases'], ['pre', '📅 Pré-événement'], ['site', '🔴 Sur site GITEX'], ['post', '✅ Post-événement']].map(([key, label]) => (
           <button key={key} className="tab-item" onClick={() => setActivePhase(key)}
-            style={{ padding: '6px 16px', borderRadius: 20, fontSize: '0.74rem', fontWeight: 600, cursor: 'pointer', border: `1.5px solid ${activePhase === key ? '#E85D04' : '#21262D'}`, background: activePhase === key ? '#E85D04' : '#161B22', color: activePhase === key ? '#fff' : '#8B949E', fontFamily: 'inherit' }}>
+            style={{ padding: '6px 16px', borderRadius: 20, fontSize: '0.74rem', fontWeight: 600, cursor: 'pointer', border: `1.5px solid ${activePhase === key ? '#fbc600' : '#21262D'}`, background: activePhase === key ? '#fbc600' : '#161B22', color: activePhase === key ? '#fff' : '#8B949E', fontFamily: 'inherit' }}>
             {label}
           </button>
         ))}
@@ -390,7 +364,7 @@ export default function App() {
 
         {/* SIDEBAR */}
         <div style={{ width: 186, flexShrink: 0, background: '#161B22', border: '1px solid #21262D', borderRadius: 14, padding: '14px 12px', position: 'sticky', top: 16 }}>
-          <div style={{ fontFamily: "'Poppins', sans-serif", fontSize: '1.25rem', fontWeight: 800, color: '#fff', lineHeight: 1.1 }}>Mars –<br /><span style={{ color: '#E85D04' }}>Avril</span></div>
+          <div style={{ fontFamily: "'Poppins', sans-serif", fontSize: '1.25rem', fontWeight: 800, color: '#fff', lineHeight: 1.1 }}>Mars –<br /><span style={{ color: '#fbc600' }}>Avril</span></div>
           <div style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.85rem', fontWeight: 700, color: '#30363D', marginBottom: 12 }}>2026</div>
 
           {/* Content types */}
@@ -419,7 +393,7 @@ export default function App() {
             {Object.entries(PHASE_CONFIG).map(([k, v]) => (
               <div key={k} style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: '0.67rem', color: '#8B949E', marginBottom: 4 }}>
                 <div style={{ width: 7, height: 7, borderRadius: '50%', background: v.color, flexShrink: 0 }} />
-                {v.label} · <strong style={{ color: '#E85D04', marginLeft: 3 }}>{countByPhase(k)}</strong>
+                {v.label} · <strong style={{ color: '#fbc600', marginLeft: 3 }}>{countByPhase(k)}</strong>
               </div>
             ))}
           </SbSection>
@@ -428,7 +402,7 @@ export default function App() {
           <SbSection label="Stats">
             {[['Publications', pills.length], ['Carrousels', pills.filter(p => p.type === 'carrousel').length], ['Vidéos', pills.filter(p => p.type === 'video').length], ['Lives', pills.filter(p => p.type === 'live').length]].map(([l, c]) => (
               <div key={l} style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.67rem', color: '#8B949E', padding: '3px 0', borderBottom: '1px solid #1C2128' }}>
-                {l} <strong style={{ color: '#E85D04' }}>{c}</strong>
+                {l} <strong style={{ color: '#fbc600' }}>{c}</strong>
               </div>
             ))}
           </SbSection>
@@ -482,14 +456,15 @@ export default function App() {
                         background: isDropTarget ? '#0d1f14' : cell.gitex ? '#120D04' : isHovered && !dragPill ? '#13181f' : 'transparent',
                         outline: isDropTarget ? '2px dashed #1A9E6E' : 'none',
                         outlineOffset: -2,
-                        opacity: isBlank ? 0.2 : 1,
+                        opacity: isBlank ? 0.15 : 1,
+                        pointerEvents: isBlank ? 'none' : 'auto',
                       }}
                     >
-                      {cell.gitex && <div style={{ fontSize: '0.46rem', fontWeight: 700, letterSpacing: '.06em', textTransform: 'uppercase', color: '#E85D04', marginBottom: 3 }}>🔴 GITEX {cell.gitex}</div>}
+                      {cell.gitex && <div style={{ fontSize: '0.46rem', fontWeight: 700, letterSpacing: '.06em', textTransform: 'uppercase', color: '#fbc600', marginBottom: 3 }}>🔴 GITEX {cell.gitex}</div>}
 
                       {cell.day
-                        ? <div style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.64rem', fontWeight: 700, color: cellPills.length > 0 ? '#484F58' : cell.gitex ? '#E85D04' : '#30363D', marginBottom: 3 }}>{cell.day}</div>
-                        : <div style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.6rem', fontWeight: 700, color: '#1C2128' }}>{cell.label || ''}</div>
+                        ? <div style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.7rem', fontWeight: 700, color: cellPills.length > 0 ? '#484F58' : cell.gitex ? '#fbc600' : '#8B949E', marginBottom: 3 }}>{cell.label || cell.day}</div>
+                        : <div style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.6rem', fontWeight: 700, color: '#21262D' }}>{cell.label || ''}</div>
                       }
 
                       {/* Pills */}
@@ -525,7 +500,7 @@ export default function App() {
 
                       {/* Add hint */}
                       {cell.day && !dragPill && isHovered && (
-                        <div style={{ fontSize: '0.55rem', color: '#E85D04', textAlign: 'center', marginTop: 2, pointerEvents: 'none', fontWeight: 600, opacity: 0.7 }}>
+                        <div style={{ fontSize: '0.55rem', color: '#fbc600', textAlign: 'center', marginTop: 2, pointerEvents: 'none', fontWeight: 600, opacity: 0.7 }}>
                           + Ajouter
                         </div>
                       )}
@@ -551,7 +526,7 @@ export default function App() {
           <div className="modal-wrap" onClick={e => e.stopPropagation()} style={{ background: '#161B22', border: '1px solid #373E47', borderRadius: 16, padding: 24, width: 460, maxWidth: '95vw', maxHeight: '90vh', overflowY: 'auto' }}>
 
             <div style={{ fontFamily: "'Poppins', sans-serif", fontSize: '1rem', fontWeight: 800, color: '#fff', marginBottom: 4 }}>
-              {modal.mode === 'add' ? '➕ Nouvelle' : '✏️ Modifier'} <span style={{ color: '#E85D04' }}>publication</span>
+              {modal.mode === 'add' ? '➕ Nouvelle' : '✏️ Modifier'} <span style={{ color: '#fbc600' }}>publication</span>
             </div>
             <div style={{ fontSize: '0.7rem', color: '#484F58', marginBottom: 18 }}>
               📅 {modal.mode === 'add' ? modal.cellDay : modal.pill.cell_day}
@@ -600,7 +575,7 @@ export default function App() {
             </div>
 
             <div style={{ display: 'flex', gap: 8 }}>
-              <button className="save-btn" onClick={saveForm} style={{ padding: '8px 18px', borderRadius: 8, fontSize: '0.75rem', fontWeight: 600, cursor: 'pointer', border: 'none', background: '#E85D04', color: '#fff', fontFamily: 'inherit', transition: 'background .2s' }}>
+              <button className="save-btn" onClick={saveForm} style={{ padding: '8px 18px', borderRadius: 8, fontSize: '0.75rem', fontWeight: 600, cursor: 'pointer', border: 'none', background: '#fbc600', color: '#fff', fontFamily: 'inherit', transition: 'background .2s' }}>
                 💾 Enregistrer
               </button>
               <button className="cancel-btn" onClick={() => setModal(null)} style={{ padding: '8px 14px', borderRadius: 8, fontSize: '0.75rem', fontWeight: 600, cursor: 'pointer', border: '1px solid #21262D', background: '#161B22', color: '#8B949E', fontFamily: 'inherit', transition: 'all .2s' }}>
